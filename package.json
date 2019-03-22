@@ -12,7 +12,7 @@
   },
   "scripts": {
     "compile": "tsc",
-    "prepublish": "npm run compile",
+    "prepare": "npm run compile",
     "prepublishOnly": "npm run quality:check",
     "preversion": "npm run quality:check",
     "version": "git add .",
