@@ -1,0 +1,31 @@
+{
+  "globals": {
+    "ts-jest": {
+      "ignoreCoverageForDecorators": true,
+      "ignoreCoverageForAllDecorators": true
+    }
+  },
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.(t|j)s?$": "ts-jest"
+  },
+  "collectCoverageFrom": [
+    "src/**/**/*.ts"
+  ],
+  "setupFiles": [
+    "<rootDir>/tests/setup.js"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]",
+    "<rootDir>/tests/integrationContract"
+  ],
+  "moduleFileExtensions": [
+    "ts",
+    "tsx",
+    "js",
+    "jsx",
+    "json",
+    "node"
+  ],
+  "preset": "ts-jest"
+}

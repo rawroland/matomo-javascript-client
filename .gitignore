@@ -1,0 +1,42 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Node dependencies #
+#####################
+node_modules
+
+
+# IDE and editor specific files #
+#################################
+nbproject
+.idea
+.buildpath
+.project
+.settings
+.tags
+.tags1
+tags
+*.launch
+
+# Environment variables #
+#########################
+.env
+
+# Tests #
+#########
+coverage
+reports
+
+# Typescript #
+##############
+dist

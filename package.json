@@ -1,0 +1,47 @@
+{
+  "name": "matomo-javascript-client",
+  "version": "0.9.0",
+  "description": "A matomo javascript client which can be used both in nodejs and browsers.",
+  "homepage": "https://github.com/rawroland/matomo-javascript-client#readme",
+  "author": "Roland Awemo, rawroro@gmail.com",
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8 <11"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "quality:check": "npm run style:check && npm run test:coverage",
+    "test": "jest --config=jest.config.json --verbose",
+    "test:coverage": "jest --config=jest.config.json --coverage --verbose",
+    "test:watch": "jest --config=jest.config.json --watch --verbose",
+    "style:check": "tslint -c ./tslint.json --project ./",
+    "style:fix": "tslint -c ./tslint.json --fix --project ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rawroland/matomo-javascript-client.git"
+  },
+  "keywords": [
+    "matomo",
+    "piwik",
+    "client",
+    "analytics",
+    "statistics",
+    "metrics"
+  ],
+  "bugs": {
+    "url": "https://github.com/rawroland/matomo-javascript-client/issues"
+  },
+  "dependencies": {
+    "@types/node": "^11.9.6",
+    "typescript": "^3.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.6",
+    "jest": "^24.1.0",
+    "jest-cli": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.12.1"
+  }
+}
