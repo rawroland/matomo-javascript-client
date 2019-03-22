@@ -1,4 +1,9 @@
-# Matomo javascript 
+# Matomo javascript
+
+[![npm package](https://nodei.co/npm/matomo-javascript-client.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/request/)
+ 
+[![Build status](https://img.shields.io/travis/rawroland/matomo-javascript-client.svg?style=flat-square)](https://travis-ci.org/rawroland/matomo-javascript-client)
+[![Coverage](https://img.shields.io/codecov/c/github/rawroland/matomo-javascript-client.svg?style=flat-square)](https://codecov.io/github/rawroland/matomo-javascript-client?branch=master)
 
 A matomo javascript client which can be used both in nodejs and browsers.
 
