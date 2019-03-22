@@ -6,6 +6,7 @@ export class Client {
   private readonly trackingEndpoint: string;
   private readonly siteId: number;
   private readonly rec: number = 1;
+  private readonly apiVersion: string = '1';
 
   constructor(trackingEndpoint: string, siteId: number) {
     this.trackingEndpoint = trackingEndpoint;
@@ -13,7 +14,10 @@ export class Client {
   }
 
   public async track(parameters: TrackingParameters): Promise<void> {
-    const postParameters: any = TrackingParametersConverter.convert(parameters);
+    const postParameters: any = TrackingParametersConverter.convert({
+      apiVersion: this.apiVersion,
+      ...parameters,
+    });
     axios.post(this.trackingEndpoint, {
       idsite: this.siteId,
       rec: this.rec,
