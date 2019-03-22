@@ -18,6 +18,7 @@
     "version": "git add .",
     "postversion": "git push && git push --tags",
     "quality:check": "npm run style:check && npm run test:coverage",
+    "coverage:publish": "codecov",
     "test": "jest --config=jest.config.json --verbose",
     "test:coverage": "jest --config=jest.config.json --coverage --verbose",
     "test:watch": "jest --config=jest.config.json --watch --verbose",
@@ -45,6 +46,7 @@
   "dependencies": {
     "@types/node": "^11.9.6",
     "axios": "^0.18.0",
+    "codecov": "^3.2.0",
     "typescript": "^3.2.2"
   },
   "devDependencies": {

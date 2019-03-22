@@ -4,4 +4,6 @@ node_js:
   - 8
 after_script:
   - npm run quality:check
+after_success:
+  - codecov
 sudo: false
