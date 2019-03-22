@@ -39,9 +39,12 @@
   "bugs": {
     "url": "https://github.com/rawroland/matomo-javascript-client/issues"
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "dependencies": {
     "@types/node": "^11.9.6",
+    "axios": "^0.18.0",
     "typescript": "^3.2.2"
   },
   "devDependencies": {
