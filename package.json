@@ -5,12 +5,18 @@
   "homepage": "https://github.com/rawroland/matomo-javascript-client#readme",
   "author": "Roland Awemo, rawroro@gmail.com",
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "engines": {
     "node": ">=8 <11"
   },
   "scripts": {
     "compile": "tsc",
+    "prepublish": "npm run compile",
+    "prepublishOnly": "npm run quality:check",
+    "preversion": "npm run quality:check",
+    "version": "git add .",
+    "postversion": "git push && git push --tags",
     "quality:check": "npm run style:check && npm run test:coverage",
     "test": "jest --config=jest.config.json --verbose",
     "test:coverage": "jest --config=jest.config.json --coverage --verbose",
