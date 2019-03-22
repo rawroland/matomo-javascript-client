@@ -3,7 +3,7 @@
 A matomo javascript client which can be used both in nodejs and browsers.
 
 ## Example
-```
+```javascript
 const client = new MatomoClient('your-piwik-domain.example/piwik.php', '1');
 client.track({
   actionName: 'push_it',
@@ -16,6 +16,6 @@ client.track({
 More examples of usage can be found in the [tests](tests).
 
 ## Installation
-```
+```shell
 npm install -save matomo-javascript-client
 ```
