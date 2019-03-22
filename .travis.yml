@@ -1,0 +1,7 @@
+language: node.js
+node_js:
+  - 10
+  - 8
+after_script:
+  - npm run quality:check
+sudo: false
