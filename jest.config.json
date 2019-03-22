@@ -7,13 +7,13 @@
   },
   "testEnvironment": "node",
   "transform": {
-    "^.+\\.(t|j)s?$": "ts-jest"
+    "^.+\\.(t)s?$": "ts-jest"
   },
   "collectCoverageFrom": [
     "src/**/**/*.ts"
   ],
   "setupFiles": [
-    "<rootDir>/tests/setup.js"
+    "<rootDir>/tests/setup.ts"
   ],
   "testPathIgnorePatterns": [
     "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]",
