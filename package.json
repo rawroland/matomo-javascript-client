@@ -1,6 +1,6 @@
 {
   "name": "matomo-javascript-client",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A matomo javascript client which can be used both in nodejs and browsers.",
   "homepage": "https://github.com/rawroland/matomo-javascript-client#readme",
   "author": "Roland Awemo, rawroro@gmail.com",
