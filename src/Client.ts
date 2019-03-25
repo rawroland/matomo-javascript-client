@@ -4,13 +4,11 @@ import {TrackingParameters} from './types';
 
 export class Client {
   private readonly trackingEndpoint: string;
-  private readonly siteId: number;
   private readonly rec: number = 1;
   private readonly apiVersion: string = '1';
 
   constructor(trackingEndpoint: string, siteId: number) {
-    this.trackingEndpoint = trackingEndpoint;
-    this.siteId = siteId;
+    this.trackingEndpoint = `${trackingEndpoint}?rec=${this.rec}&idsite=${siteId}`;
   }
 
   public async track(parameters: TrackingParameters): Promise<void> {
@@ -18,10 +16,6 @@ export class Client {
       apiVersion: this.apiVersion,
       ...parameters,
     });
-    axios.post(this.trackingEndpoint, {
-      idsite: this.siteId,
-      rec: this.rec,
-      ...postParameters,
-    });
+    axios.post(this.trackingEndpoint, postParameters);
   }
 }
