@@ -4,6 +4,7 @@
  
 [![Build status](https://img.shields.io/travis/rawroland/matomo-javascript-client.svg?style=flat-square)](https://travis-ci.org/rawroland/matomo-javascript-client)
 [![Coverage](https://img.shields.io/codecov/c/github/rawroland/matomo-javascript-client.svg?style=flat-square)](https://codecov.io/github/rawroland/matomo-javascript-client?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/rawroland/proverbial-backend-nodejs/badge.svg?targetFile=package.json&style=flat-square)](https://snyk.io/test/github/rawroland/proverbial-backend-nodejs?targetFile=package.json)
 
 A matomo javascript client which can be used both in nodejs and browsers.
 
