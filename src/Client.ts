@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {TrackingParametersConverter} from './TrackingParametersConverter';
-import {TrackingParameters} from './types';
+import {RenamedTrackingParameters} from './types';
 
 export class Client {
   private readonly trackingEndpoint: string;
@@ -11,7 +11,7 @@ export class Client {
     this.trackingEndpoint = `${trackingEndpoint}?rec=${this.rec}&idsite=${siteId}`;
   }
 
-  public async track(parameters: TrackingParameters): Promise<void> {
+  public async track(parameters: RenamedTrackingParameters): Promise<void> {
     const postParameters: any = TrackingParametersConverter.convert({
       apiVersion: this.apiVersion,
       ...parameters,

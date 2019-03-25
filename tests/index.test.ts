@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {MatomoClient, TrackingParameters} from '../src';
+import {MatomoClient, RenamedTrackingParameters} from '../src';
 
 jest.mock('axios');
 
@@ -7,7 +7,7 @@ const siteId = 1;
 const trackingEndpoint = `https://example.com/matomo.php`;
 const parameterizedEndpoint = `https://example.com/matomo.php?rec=1&idsite=${siteId}`;
 describe('Client', () => {
-  const parameters: TrackingParameters = {
+  const parameters: RenamedTrackingParameters = {
     actionName: 'push_it',
     url: 'https://example.com',
     uniqueUserId: '3b99e3e0759811e8',

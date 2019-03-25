@@ -1,2 +1,2 @@
 export {Client as MatomoClient} from './Client';
-export {TrackingParameters} from './types';
+export {RenamedTrackingParameters} from './types';
