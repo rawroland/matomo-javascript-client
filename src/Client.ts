@@ -1,6 +1,7 @@
 import axios from 'axios';
 import {TrackingParametersConverter} from './TrackingParametersConverter';
 import {RenamedTrackingParameters} from './types';
+import {objectToQueryString} from './utils';
 
 export class Client {
   private readonly trackingEndpoint: string;
@@ -12,10 +13,11 @@ export class Client {
   }
 
   public async track(parameters: RenamedTrackingParameters): Promise<void> {
-    const postParameters: any = TrackingParametersConverter.convert({
+    const trackingParameters: any = TrackingParametersConverter.convert({
       apiVersion: this.apiVersion,
       ...parameters,
     });
-    axios.post(this.trackingEndpoint, postParameters);
+    const url = this.trackingEndpoint + '?' + objectToQueryString(trackingParameters);
+    await axios.get(url);
   }
 }
