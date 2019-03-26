@@ -32,5 +32,5 @@ describe('Client', () => {
 });
 
 function buildUrl(parameters) {
-  return parameterizedEndpoint + '?' + objectToQueryString(parameters);
+  return parameterizedEndpoint + '&' + objectToQueryString(parameters);
 }
