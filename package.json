@@ -12,7 +12,7 @@
   },
   "scripts": {
     "compile": "tsc",
-    "prepare": "npm run snyk-protect; npm run compile",
+    "prepare": "npm run compile",
     "prepublishOnly": "npm run quality:check",
     "preversion": "npm run quality:check",
     "version": "git add .",
@@ -24,7 +24,8 @@
     "test:watch": "jest --config=jest.config.json --watch --verbose",
     "style:check": "tslint -c ./tslint.json --project ./",
     "style:fix": "tslint -c ./tslint.json --fix --project ./",
-    "snyk-protect": "snyk protect"
+    "snyk:protect": "snyk protect",
+    "snyk:wizard": "snyk wizard"
   },
   "repository": {
     "type": "git",
@@ -48,8 +49,8 @@
     "@types/node": "^11.9.6",
     "axios": "^0.18.0",
     "codecov": "^3.2.0",
-    "typescript": "^3.2.2",
-    "snyk": "^1.161.1"
+    "snyk": "^1.161.1",
+    "typescript": "^3.2.2"
   },
   "devDependencies": {
     "@types/jest": "^24.0.6",
