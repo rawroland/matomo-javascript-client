@@ -26,7 +26,7 @@
     "style:fix": "tslint -c ./tslint.json --fix --project ./",
     "snyk:protect": "snyk protect",
     "snyk:wizard": "snyk wizard",
-    "snyk-protect": "snyk protect"
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -48,10 +48,10 @@
   ],
   "dependencies": {
     "@types/node": "^11.9.6",
-    "axios": "^0.18.0",
-    "codecov": "^3.2.0",
-    "snyk": "^1.189.0",
-    "typescript": "^3.2.2"
+    "axios": "^0.21.3",
+    "codecov": "^3.7.1",
+    "typescript": "^3.2.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/jest": "^24.0.6",
