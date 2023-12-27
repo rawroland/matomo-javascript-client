@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "@types/node": "^11.9.6",
-    "axios": "^0.18.0",
+    "axios": "^1.6.3",
     "codecov": "^3.2.0",
     "snyk": "^1.189.0",
     "typescript": "^3.2.2"
