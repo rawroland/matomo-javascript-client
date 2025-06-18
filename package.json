@@ -50,7 +50,7 @@
     "@types/node": "^11.9.6",
     "axios": "^0.18.0",
     "codecov": "^3.2.0",
-    "snyk": "^1.189.0",
+    "snyk": "^1.996.0",
     "typescript": "^3.2.2"
   },
   "devDependencies": {
